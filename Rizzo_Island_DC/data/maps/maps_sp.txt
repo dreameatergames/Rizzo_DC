@@ -1,0 +1,13 @@
+// Level transition definitions
+
+// Each line contains the name of three maps, without extension.
+// When you're playing in the first map and the game issues a changelevel to go to the second map, the changelevel will be redirected to the third map.
+
+// Example:
+// When you're in the map "start" and tries to go to the map "e1m1", the game will load the map "e1m7".
+// start e1m1 e1m7
+
+// Wildcard notes:
+// You can replace the second name with an asterisk. It's useful for things like this:
+// start e1m1 e1m7 (if you try to go from the map "start" to the map "e1m1", you will go to the map "e1m7")
+// start * e1m8 (if you try to go from the map "start" to any other map, you will go to the map "e1m8")

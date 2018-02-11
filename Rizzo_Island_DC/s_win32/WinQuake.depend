@@ -1,0 +1,603 @@
+# depslib dependency file v1.0
+1187468630 source:c:\cygwin\home\manoel\makaqu\s_win32\winquake.rc
+	"include/resource.h"
+	"afxres.h"
+
+1136250138 c:\cygwin\home\manoel\makaqu\s_win32\include\resource.h
+
+1130051010 source:c:\cygwin\home\manoel\makaqu\common\src\chase.c
+	"quakedef.h"
+
+1155250782 c:\cygwin\home\manoel\makaqu\common\include\quakedef.h
+	<math.h>
+	<string.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<setjmp.h>
+	"common.h"
+	"bspfile.h"
+	"vid.h"
+	"sys.h"
+	"zone.h"
+	"mathlib.h"
+	"wad.h"
+	"draw.h"
+	"cvar.h"
+	"screen.h"
+	"net.h"
+	"protocol.h"
+	"cmd.h"
+	"sbar.h"
+	"sound.h"
+	"render.h"
+	"client.h"
+	"progs.h"
+	"server.h"
+	"gl_model.h"
+	"model.h"
+	"d_iface.h"
+	"input.h"
+	"world.h"
+	"keys.h"
+	"console.h"
+	"view.h"
+	"menu.h"
+	"crc.h"
+	"cdaudio.h"
+	"glquake.h"
+
+1131072728 c:\cygwin\home\manoel\makaqu\common\include\common.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\bspfile.h
+
+1163474404 c:\cygwin\home\manoel\makaqu\common\include\vid.h
+
+1146463590 c:\cygwin\home\manoel\makaqu\common\include\sys.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\zone.h
+
+1128372954 c:\cygwin\home\manoel\makaqu\common\include\mathlib.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\wad.h
+
+1191291850 c:\cygwin\home\manoel\makaqu\common\include\draw.h
+
+1129715744 c:\cygwin\home\manoel\makaqu\common\include\cvar.h
+
+1135281188 c:\cygwin\home\manoel\makaqu\common\include\screen.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\net.h
+
+1154649272 c:\cygwin\home\manoel\makaqu\common\include\protocol.h
+
+1119564654 c:\cygwin\home\manoel\makaqu\common\include\cmd.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\sbar.h
+
+1127442518 c:\cygwin\home\manoel\makaqu\common\include\sound.h
+
+1154648804 c:\cygwin\home\manoel\makaqu\common\include\render.h
+
+1138581598 c:\cygwin\home\manoel\makaqu\common\include\client.h
+
+1142552852 c:\cygwin\home\manoel\makaqu\common\include\progs.h
+	"pr_comp.h"
+	"progdefs.h"
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\pr_comp.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\progdefs.h
+	"progdefs.q2"
+	"progdefs.q1"
+
+856523606 c:\cygwin\home\manoel\makaqu\common\include\progdefs.q1
+
+1154476150 c:\cygwin\home\manoel\makaqu\common\include\server.h
+
+1157818420 c:\cygwin\home\manoel\makaqu\common\include\model.h
+	"modelgen.h"
+	"spritegn.h"
+
+1157818420 c:\cygwin\home\manoel\makaqu\common\include\modelgen.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"cmdlib.h"
+	"scriplib.h"
+	"trilib.h"
+	"lbmlib.h"
+	"mathlib.h"
+
+1125861254 c:\cygwin\home\manoel\makaqu\common\include\spritegn.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"cmdlib.h"
+	"scriplib.h"
+	"dictlib.h"
+	"trilib.h"
+	"lbmlib.h"
+	"mathlib.h"
+
+1206249370 c:\cygwin\home\manoel\makaqu\common\include\d_iface.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\input.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\world.h
+
+1206257024 c:\cygwin\home\manoel\makaqu\common\include\keys.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\console.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\view.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\menu.h
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\crc.h
+
+1150414040 c:\cygwin\home\manoel\makaqu\common\include\cdaudio.h
+
+1129450662 source:c:\cygwin\home\manoel\makaqu\common\src\cl_demo.c
+	"quakedef.h"
+	<kos.h>
+	<assert.h>
+
+1142558930 source:c:\cygwin\home\manoel\makaqu\common\src\cl_input.c
+	"quakedef.h"
+
+1150515572 source:c:\cygwin\home\manoel\makaqu\common\src\cl_main.c
+	"quakedef.h"
+
+1155266904 source:c:\cygwin\home\manoel\makaqu\common\src\cl_parse.c
+	"quakedef.h"
+
+1147571778 source:c:\cygwin\home\manoel\makaqu\common\src\cl_tent.c
+	"quakedef.h"
+
+1188016722 source:c:\cygwin\home\manoel\makaqu\common\src\cmd.c
+	"quakedef.h"
+
+1140452912 source:c:\cygwin\home\manoel\makaqu\common\src\common.c
+	"quakedef.h"
+
+1201229018 source:c:\cygwin\home\manoel\makaqu\common\src\console.c
+	<libc.h>
+	<unistd.h>
+	<fcntl.h>
+	"quakedef.h"
+
+1129714040 source:c:\cygwin\home\manoel\makaqu\common\src\crc.c
+	"quakedef.h"
+	"crc.h"
+
+1137621150 source:c:\cygwin\home\manoel\makaqu\common\src\cvar.c
+	"quakedef.h"
+
+1163474404 source:c:\cygwin\home\manoel\makaqu\common\src\host.c
+	"quakedef.h"
+	"r_local.h"
+
+1141177958 c:\cygwin\home\manoel\makaqu\common\include\r_local.h
+	"r_shared.h"
+
+1129264016 c:\cygwin\home\manoel\makaqu\common\include\r_shared.h
+
+1206300212 source:c:\cygwin\home\manoel\makaqu\common\src\host_cmd.c
+	"quakedef.h"
+
+1201240376 source:c:\cygwin\home\manoel\makaqu\common\src\keys.c
+	"quakedef.h"
+
+1172169694 source:c:\cygwin\home\manoel\makaqu\common\src\mathlib.c
+	<math.h>
+	"quakedef.h"
+
+1201137524 source:c:\cygwin\home\manoel\makaqu\common\src\menu.c
+	"quakedef.h"
+	"winquake.h"
+
+1102792510 c:\cygwin\home\manoel\makaqu\s_win32\include\winquake.h
+	<windows.h>
+	<ddraw.h>
+	<dsound.h>
+	<mgraph.h>
+
+854447824 c:\cygwin\home\manoel\makaqu\s_win32\dxsdk\sdk\inc\ddraw.h
+	<objbase.h>
+
+854447824 c:\cygwin\home\manoel\makaqu\s_win32\dxsdk\sdk\inc\dsound.h
+	<objbase.h>
+
+858106002 c:\cygwin\home\manoel\makaqu\s_win32\scitech\include\mgraph.h
+	<stdio.h>
+	"debug.h"
+	"mglrect.hpp"
+	"mglwin.h"
+	"mgldos.h"
+
+857482448 c:\cygwin\home\manoel\makaqu\s_win32\scitech\include\debug.h
+	<windows.h>
+
+858362974 c:\cygwin\home\manoel\makaqu\s_win32\scitech\include\mglwin.h
+
+854652718 c:\cygwin\home\manoel\makaqu\s_win32\scitech\include\mgldos.h
+
+945802406 source:c:\cygwin\home\manoel\makaqu\common\src\net_dgrm.c
+	<windows.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	"quakedef.h"
+	"net_dgrm.h"
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\net_dgrm.h
+
+945802406 source:c:\cygwin\home\manoel\makaqu\common\src\net_loop.c
+	"quakedef.h"
+	"net_loop.h"
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\net_loop.h
+
+1131947340 source:c:\cygwin\home\manoel\makaqu\common\src\net_main.c
+	"quakedef.h"
+	"net_vcr.h"
+
+945802460 c:\cygwin\home\manoel\makaqu\common\include\net_vcr.h
+
+945802406 source:c:\cygwin\home\manoel\makaqu\common\src\net_vcr.c
+	"quakedef.h"
+	"net_vcr.h"
+
+1188016722 source:c:\cygwin\home\manoel\makaqu\common\src\pr_cmds.c
+	"quakedef.h"
+
+1142553378 source:c:\cygwin\home\manoel\makaqu\common\src\pr_edict.c
+	"quakedef.h"
+
+1125971670 source:c:\cygwin\home\manoel\makaqu\common\src\pr_exec.c
+	"quakedef.h"
+
+1128819848 source:c:\cygwin\home\manoel\makaqu\common\src\r_part.c
+	"quakedef.h"
+	"r_local.h"
+
+1206251930 source:c:\cygwin\home\manoel\makaqu\common\src\sbar.c
+	"quakedef.h"
+
+1147355886 source:c:\cygwin\home\manoel\makaqu\common\src\snd_dma.c
+	"quakedef.h"
+	"winquake.h"
+
+1154477244 source:c:\cygwin\home\manoel\makaqu\common\src\snd_mem.c
+	"quakedef.h"
+
+1124043306 source:c:\cygwin\home\manoel\makaqu\common\src\snd_mix.c
+	"quakedef.h"
+	"winquake.h"
+
+1154650284 source:c:\cygwin\home\manoel\makaqu\common\src\sv_main.c
+	"quakedef.h"
+
+945802406 source:c:\cygwin\home\manoel\makaqu\common\src\sv_move.c
+	"quakedef.h"
+
+1206251742 source:c:\cygwin\home\manoel\makaqu\common\src\sv_phys.c
+	"quakedef.h"
+
+1150438406 source:c:\cygwin\home\manoel\makaqu\common\src\sv_user.c
+	"quakedef.h"
+
+1155267152 source:c:\cygwin\home\manoel\makaqu\common\src\view.c
+	"quakedef.h"
+	"r_local.h"
+
+1128825984 source:c:\cygwin\home\manoel\makaqu\common\src\wad.c
+	"quakedef.h"
+
+1129713582 source:c:\cygwin\home\manoel\makaqu\common\src\world.c
+	"quakedef.h"
+
+1128373912 source:c:\cygwin\home\manoel\makaqu\common\src\zone.c
+	"quakedef.h"
+
+1135281514 source:c:\cygwin\home\manoel\makaqu\r_common\src\r_2d.c
+	"quakedef.h"
+
+1145816512 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_edge.c
+	"quakedef.h"
+	"d_local.h"
+
+1129233998 c:\cygwin\home\manoel\makaqu\common\include\d_local.h
+	"r_shared.h"
+
+945802404 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_fill.c
+	"quakedef.h"
+
+1152454174 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_init.c
+	"quakedef.h"
+	"d_local.h"
+
+1152454200 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_modech.c
+	"quakedef.h"
+	"d_local.h"
+
+1128796966 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_part.c
+	"quakedef.h"
+	"d_local.h"
+
+1188018138 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_polyse.c
+	"quakedef.h"
+	"r_local.h"
+	"d_local.h"
+	"adivtab.h"
+
+945812600 c:\cygwin\home\manoel\makaqu\common\include\adivtab.h
+
+1206247892 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_scan.c
+	"quakedef.h"
+	"r_local.h"
+	"d_local.h"
+
+1206251742 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_sky.c
+	"quakedef.h"
+	"r_local.h"
+	"d_local.h"
+
+1128813770 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_sprite.c
+	"quakedef.h"
+	"d_local.h"
+
+1119821676 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_surf.c
+	"quakedef.h"
+	"d_local.h"
+	"r_local.h"
+
+945802404 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_vars.c
+	"quakedef.h"
+
+945802404 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_zpoint.c
+	"quakedef.h"
+	"d_local.h"
+
+1206250828 source:c:\cygwin\home\manoel\makaqu\r_soft\src\draw.c
+	"quakedef.h"
+
+1154477270 source:c:\cygwin\home\manoel\makaqu\r_soft\src\model.c
+	"quakedef.h"
+	"r_local.h"
+
+1157764456 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_aclip.c
+	"quakedef.h"
+	"r_local.h"
+	"d_local.h"
+
+1206250788 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_alias.c
+	"quakedef.h"
+	"r_local.h"
+	"anorms.h"
+
+1108295358 c:\cygwin\home\manoel\makaqu\common\include\anorms.h
+
+1146463212 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_bsp.c
+	"quakedef.h"
+	"r_local.h"
+
+1145816552 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_draw.c
+	"quakedef.h"
+	"r_local.h"
+	"d_local.h"
+
+1126984612 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_edge.c
+	"quakedef.h"
+	"r_local.h"
+
+945802406 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_efrag.c
+	"quakedef.h"
+	"r_local.h"
+
+1152467600 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_light.c
+	"quakedef.h"
+	"r_local.h"
+
+1206250788 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_main.c
+	"quakedef.h"
+	"r_local.h"
+
+1143257668 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_misc.c
+	"quakedef.h"
+	"r_local.h"
+
+1129713662 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_sky.c
+	"quakedef.h"
+	"r_local.h"
+	"d_local.h"
+
+1128136526 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_sprite.c
+	"quakedef.h"
+	"r_local.h"
+
+1168716948 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_surf.c
+	"quakedef.h"
+	"r_local.h"
+
+945802406 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_vars.c
+	"quakedef.h"
+
+1170776446 source:c:\cygwin\home\manoel\makaqu\r_soft\src\screen.c
+	"quakedef.h"
+	"r_local.h"
+
+1206249892 source:c:\cygwin\home\manoel\makaqu\s_win32\src\cd_win.c
+	<windows.h>
+	"quakedef.h"
+
+1187469760 source:c:\cygwin\home\manoel\makaqu\s_win32\src\conproc.c
+	<windows.h>
+	"conproc.h"
+	"quakedef.h"
+
+945802460 c:\cygwin\home\manoel\makaqu\s_win32\include\conproc.h
+
+1201240376 source:c:\cygwin\home\manoel\makaqu\s_win32\src\in_win.c
+	<dinput.h>
+	"quakedef.h"
+	"winquake.h"
+	"dosisms.h"
+
+841218432 c:\cygwin\home\manoel\makaqu\s_win32\dxsdk\sdk\inc\dinput.h
+	<objbase.h>
+
+945802460 c:\cygwin\home\manoel\makaqu\s_win32\include\dosisms.h
+
+945802406 source:c:\cygwin\home\manoel\makaqu\s_win32\src\net_win.c
+	"quakedef.h"
+	"net_loop.h"
+	"net_dgrm.h"
+	"net_ser.h"
+	"net_wins.h"
+	"net_wipx.h"
+
+945802460 c:\cygwin\home\manoel\makaqu\s_win32\include\net_ser.h
+
+945802460 c:\cygwin\home\manoel\makaqu\s_win32\include\net_wins.h
+
+945802460 c:\cygwin\home\manoel\makaqu\s_win32\include\net_wipx.h
+
+1119932006 source:c:\cygwin\home\manoel\makaqu\s_win32\src\net_wins.c
+	"quakedef.h"
+	"winquake.h"
+	"net_wins.h"
+
+1119932044 source:c:\cygwin\home\manoel\makaqu\s_win32\src\net_wipx.c
+	"quakedef.h"
+	"winquake.h"
+	<wsipx.h>
+	"net_wipx.h"
+
+1206249892 source:c:\cygwin\home\manoel\makaqu\s_win32\src\snd_win.c
+	"quakedef.h"
+	"winquake.h"
+
+1128922216 source:c:\cygwin\home\manoel\makaqu\s_win32\src\sys_win.c
+	"quakedef.h"
+	"winquake.h"
+	"errno.h"
+	"resource.h"
+	"conproc.h"
+
+1206249372 source:c:\cygwin\home\manoel\makaqu\s_win32\src\vid_win.c
+	"quakedef.h"
+	"winquake.h"
+	"d_local.h"
+	"resource.h"
+
+1124614858 source:c:\cygwin\home\manoel\makaqu\common\src\math.s
+	"..\include\asm_i386.h"
+	"..\include\quakeasm.h"
+
+945812550 c:\cygwin\home\manoel\makaqu\common\include\asm_i386.h
+
+1155250776 c:\cygwin\home\manoel\makaqu\common\include\quakeasm.h
+
+1124614890 source:c:\cygwin\home\manoel\makaqu\s_win32\src\sys_wina.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+
+1124615318 source:c:\cygwin\home\manoel\makaqu\r_soft\src\surf16.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\include\block16.h"
+
+945812544 c:\cygwin\home\manoel\makaqu\r_soft\include\asm_draw.h
+
+945812460 c:\cygwin\home\manoel\makaqu\r_soft\include\block16.h
+
+1124614964 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_varsa.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1119562102 c:\cygwin\home\manoel\makaqu\common\include\d_ifacea.h
+
+1124614978 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_edgea.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+
+1124615030 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_drawa.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615054 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_aliasa.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615074 source:c:\cygwin\home\manoel\makaqu\r_soft\src\r_aclipa.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615090 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_varsa.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615102 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_spr8.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+
+1124615120 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_scana.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615138 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_polysa.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615154 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_parta.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\..\common\include\d_ifacea.h"
+	"..\include\asm_draw.h"
+
+1124615172 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_draw16.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124615190 source:c:\cygwin\home\manoel\makaqu\r_soft\src\d_draw.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+	"..\..\common\include\d_ifacea.h"
+
+1124614242 source:c:\cygwin\home\manoel\makaqu\common\src\worlda.s
+	"..\include\asm_i386.h"
+	"..\include\quakeasm.h"
+	"..\include\d_ifacea.h"
+
+1124614844 source:c:\cygwin\home\manoel\makaqu\common\src\snd_mixa.s
+	"..\include\asm_i386.h"
+	"..\include\quakeasm.h"
+
+1124614922 source:c:\cygwin\home\manoel\makaqu\r_soft\src\surf8.s
+	"..\..\common\include\asm_i386.h"
+	"..\..\common\include\quakeasm.h"
+	"..\include\asm_draw.h"
+

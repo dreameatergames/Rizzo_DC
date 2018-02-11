@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: winquake - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Manoel\CONFIG~1\Temp\RSP8.tmp" with contents
+[
+/nologo /G5 /ML /GX /O2 /I "..\common\include" /I "..\r_soft\include" /I ".\include" /I ".\scitech\include" /I ".\dxsdk\sdk\inc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/WinQuake.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\CYGWIN\home\Manoel\Makaqu\common\src\mathlib.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Manoel\CONFIG~1\Temp\RSP8.tmp" 
+Creating temporary file "C:\DOCUME~1\Manoel\CONFIG~1\Temp\RSP9.tmp" with contents
+[
+.\dxsdk\sdk\lib\dxguid.lib .\scitech\lib\win32\vc\mgllt.lib winmm.lib wsock32.lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Makaqu.pdb" /machine:I386 /out:".\Release/Makaqu.exe" 
+.\Release\d_part.obj
+.\Release\draw.obj
+.\Release\screen.obj
+.\Release\d_polyse.obj
+.\Release\r_aclip.obj
+.\Release\r_alias.obj
+.\Release\d_edge.obj
+.\Release\d_scan.obj
+.\Release\d_sky.obj
+.\Release\d_surf.obj
+.\Release\r_bsp.obj
+.\Release\r_draw.obj
+.\Release\r_edge.obj
+.\Release\r_sky.obj
+.\Release\r_surf.obj
+.\Release\d_sprite.obj
+.\Release\r_sprite.obj
+.\Release\d_fill.obj
+.\Release\d_init.obj
+.\Release\d_modech.obj
+.\Release\d_vars.obj
+.\Release\d_zpoint.obj
+.\Release\model.obj
+.\Release\r_efrag.obj
+.\Release\r_light.obj
+.\Release\r_main.obj
+.\Release\r_misc.obj
+.\Release\r_vars.obj
+.\Release\cd_win.obj
+.\Release\conproc.obj
+.\Release\in_win.obj
+.\Release\net_win.obj
+.\Release\net_wins.obj
+.\Release\net_wipx.obj
+.\Release\snd_win.obj
+.\Release\sys_win.obj
+.\Release\vid_win.obj
+.\Release\chase.obj
+.\Release\cl_demo.obj
+.\Release\cl_input.obj
+.\Release\cl_main.obj
+.\Release\cl_parse.obj
+.\Release\cl_tent.obj
+.\Release\cmd.obj
+.\Release\common.obj
+.\Release\console.obj
+.\Release\crc.obj
+.\Release\cvar.obj
+.\Release\host.obj
+.\Release\host_cmd.obj
+.\Release\keys.obj
+.\Release\mathlib.obj
+.\Release\menu.obj
+.\Release\net_dgrm.obj
+.\Release\net_loop.obj
+.\Release\net_main.obj
+.\Release\net_vcr.obj
+.\Release\pr_cmds.obj
+.\Release\pr_edict.obj
+.\Release\pr_exec.obj
+.\Release\r_part.obj
+.\Release\sbar.obj
+.\Release\sv_main.obj
+.\Release\sv_move.obj
+.\Release\sv_phys.obj
+.\Release\sv_user.obj
+.\Release\view.obj
+.\Release\wad.obj
+.\Release\world.obj
+.\Release\zone.obj
+.\Release\snd_dma.obj
+.\Release\snd_mem.obj
+.\Release\snd_mix.obj
+.\Release\r_2d.obj
+.\Release\winquake.res
+.\Release\d_draw.obj
+.\Release\d_draw16.obj
+.\Release\d_parta.obj
+.\Release\d_polysa.obj
+.\Release\r_aclipa.obj
+.\Release\r_aliasa.obj
+.\Release\d_scana.obj
+.\Release\r_edgea.obj
+.\Release\surf16.obj
+.\Release\surf8.obj
+.\Release\d_spr8.obj
+.\Release\d_varsa.obj
+.\Release\r_drawa.obj
+.\Release\r_varsa.obj
+.\Release\sys_wina.obj
+.\Release\math.obj
+.\Release\worlda.obj
+.\Release\snd_mixa.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Manoel\CONFIG~1\Temp\RSP9.tmp"
+<h3>Output Window</h3>
+Compiling...
+mathlib.c
+Linking...
+
+
+
+<h3>Results</h3>
+Makaqu.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

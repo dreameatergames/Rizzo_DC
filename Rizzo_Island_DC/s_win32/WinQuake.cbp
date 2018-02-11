@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="WinQuake" />
+		<Option pch_mode="2" />
+		<Option compiler="msvctk" />
+		<Build>
+			<Target title="Win32 Release">
+				<Option output=".\Release\Makaqu.exe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="0" />
+				<Option compiler="msvctk" />
+				<Compiler>
+					<Add option="/G5" />
+					<Add option="/Ot" />
+					<Add option="/O2" />
+					<Add option="/W1" />
+					<Add option="/YX" />
+					<Add option="/FD" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add directory="..\common\include" />
+					<Add directory="..\r_soft\include" />
+					<Add directory=".\include" />
+					<Add directory=".\scitech\include" />
+					<Add directory=".\dxsdk\sdk\inc" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/machine:I386" />
+					<Add option='/out:&quot;.\Release/Makaqu.exe&quot;' />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library=".\dxsdk\sdk\lib\dxguid.lib" />
+					<Add library=".\scitech\lib\win32\vc\mgllt.lib" />
+					<Add library="winmm" />
+					<Add library="wsock32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Debug">
+				<Option output="C:\CYGWIN\home\Manoel\Makaqu\s_win32\Debug\WinQuake.exe" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".\Debug" />
+				<Option type="0" />
+				<Option compiler="msvctk" />
+				<Compiler>
+					<Add option="/W3" />
+					<Add option="/Gm" />
+					<Add option="/GX" />
+					<Add option="/Zi" />
+					<Add option="/Od" />
+					<Add option="/DWIN32" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/YX" />
+					<Add option="/G5" />
+					<Add option="/ML" />
+					<Add option="/FR" />
+					<Add option="/FD" />
+					<Add directory=".\scitech\include" />
+					<Add directory=".\dxsdk\sdk\inc" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/debug" />
+					<Add option="/machine:I386" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library=".\dxsdk\sdk\lib\dxguid" />
+					<Add library=".\scitech\lib\win32\vc\mgllt" />
+					<Add library="winmm" />
+					<Add library="wsock32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+			<Target title="Win32 GL Debug">
+				<Option output=".\debug_gl\glquake.exe" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".\debug_gl" />
+				<Option type="0" />
+				<Option compiler="msvctk" />
+				<Compiler>
+					<Add option="/G5" />
+					<Add option="/ML" />
+					<Add option="/GX" />
+					<Add option="/Zi" />
+					<Add option="/Od" />
+					<Add option="/DWIN32" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/YX" />
+					<Add option="/DGLQUAKE" />
+					<Add option="/FR" />
+					<Add option="/FD" />
+					<Add directory=".\scitech\include" />
+					<Add directory=".\dxsdk\sdk\inc" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/debug" />
+					<Add option="/machine:I386" />
+					<Add option='/out:&quot;.\debug_gl\glquake.exe&quot;' />
+					<Add library="winmm" />
+					<Add library="wsock32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library=".\scitech\lib\win32\vc\mgllt" />
+					<Add library=".\dxsdk\sdk\lib\dxguid" />
+					<Add library="comctl32" />
+				</Linker>
+			</Target>
+			<Target title="Win32 GL Release">
+				<Option output=".\release_gl\glMakaqu.exe" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".\release_gl" />
+				<Option type="0" />
+				<Option compiler="msvctk" />
+				<Compiler>
+					<Add option="/G5" />
+					<Add option="/GX" />
+					<Add option="/Ox" />
+					<Add option="/Ot" />
+					<Add option="/Ow" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/YX" />
+					<Add option="/Od" />
+					<Add option="/DGLQUAKE" />
+					<Add option="/FD" />
+					<Add directory=".\scitech\include" />
+					<Add directory=".\dxsdk\sdk\inc" />
+					<Add directory="..\common\include" />
+					<Add directory="..\r_gl\include" />
+					<Add directory=".\include" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:windows" />
+					<Add option="/profile" />
+					<Add option="/machine:I386" />
+					<Add option='/out:&quot;.\release_gl\glMakaqu.exe&quot;' />
+					<Add library="winmm" />
+					<Add library="wsock32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+					<Add library=".\scitech\lib\win32\vc\mgllt" />
+					<Add library=".\dxsdk\sdk\lib\dxguid" />
+					<Add library="comctl32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="..\common\include\anorm_dots.h" />
+		<Unit filename="..\common\include\anorms.h" />
+		<Unit filename="..\common\include\asm_i386.h" />
+		<Unit filename="..\common\include\bspfile.h" />
+		<Unit filename="..\common\include\cdaudio.h" />
+		<Unit filename="..\common\include\client.h" />
+		<Unit filename="..\common\include\cmd.h" />
+		<Unit filename="..\common\include\common.h" />
+		<Unit filename="..\common\include\console.h" />
+		<Unit filename="..\common\include\crc.h" />
+		<Unit filename="..\common\include\cvar.h" />
+		<Unit filename="..\common\include\d_iface.h" />
+		<Unit filename="..\common\include\draw.h" />
+		<Unit filename="..\common\include\input.h" />
+		<Unit filename="..\common\include\keys.h" />
+		<Unit filename="..\common\include\mathlib.h" />
+		<Unit filename="..\common\include\menu.h" />
+		<Unit filename="..\common\include\model.h" />
+		<Unit filename="..\common\include\modelgen.h" />
+		<Unit filename="..\common\include\net.h" />
+		<Unit filename="..\common\include\net_dgrm.h" />
+		<Unit filename="..\common\include\net_loop.h" />
+		<Unit filename="..\common\include\net_vcr.h" />
+		<Unit filename="..\common\include\pr_comp.h" />
+		<Unit filename="..\common\include\progdefs.h" />
+		<Unit filename="..\common\include\progdefs.q1" />
+		<Unit filename="..\common\include\progs.h" />
+		<Unit filename="..\common\include\protocol.h" />
+		<Unit filename="..\common\include\quakeasm.h" />
+		<Unit filename="..\common\include\quakedef.h" />
+		<Unit filename="..\common\include\r_local.h" />
+		<Unit filename="..\common\include\r_shared.h" />
+		<Unit filename="..\common\include\render.h" />
+		<Unit filename="..\common\include\sbar.h" />
+		<Unit filename="..\common\include\screen.h" />
+		<Unit filename="..\common\include\server.h" />
+		<Unit filename="..\common\include\sound.h" />
+		<Unit filename="..\common\include\spritegn.h" />
+		<Unit filename="..\common\include\sys.h" />
+		<Unit filename="..\common\include\vid.h" />
+		<Unit filename="..\common\include\view.h" />
+		<Unit filename="..\common\include\wad.h" />
+		<Unit filename="..\common\include\world.h" />
+		<Unit filename="..\common\include\zone.h" />
+		<Unit filename="..\common\src\chase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cl_demo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cl_input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cl_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cl_parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cl_tent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\cvar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\host.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\host_cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\keys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\math.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+		</Unit>
+		<Unit filename="..\common\src\mathlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\net_dgrm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\net_loop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\net_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\net_vcr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\pr_cmds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\pr_edict.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\pr_exec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\r_part.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\sbar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\snd_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\snd_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\snd_mix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\snd_mixa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+		</Unit>
+		<Unit filename="..\common\src\sv_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\sv_move.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\sv_phys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\sv_user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\view.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\wad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\world.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\common\src\worlda.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+		</Unit>
+		<Unit filename="..\common\src\zone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\r_common\src\r_2d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\r_gl\include\gl_model.h" />
+		<Unit filename="..\r_gl\include\gl_warp_sin.h" />
+		<Unit filename="..\r_gl\include\glquake.h" />
+		<Unit filename="..\r_gl\src\gl_draw.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_mesh.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_model.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_refrag.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_rlight.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_rmain.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_rmisc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_rsurf.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_screen.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_vidnt.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\r_gl\src\gl_warp.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_draw.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_draw16.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_edge.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_fill.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_init.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_modech.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_part.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_parta.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_polysa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_polyse.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_scan.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_scana.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_sky.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_spr8.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_sprite.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_surf.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_vars.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_varsa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\d_zpoint.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\draw.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\model.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_aclip.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_aclipa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_alias.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_aliasa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_bsp.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_draw.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_drawa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_edge.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_edgea.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_efrag.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_light.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_main.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_misc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_sky.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_sprite.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_surf.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_vars.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\r_varsa.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\screen.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\surf16.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\r_soft\src\surf8.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\Makefile">
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\cd_dc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\dc_menu.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\dc_vibe.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\dc_vmu.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\in_dc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\net_dc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\snd_dc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\snd_sdl.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\sys_dc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\vid_dc.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="..\s_dc\src\vid_dcgl.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+			<Option target="Win32 GL Debug" />
+		</Unit>
+		<Unit filename="include\conproc.h" />
+		<Unit filename="include\dosisms.h" />
+		<Unit filename="include\net_ser.h" />
+		<Unit filename="include\net_wins.h" />
+		<Unit filename="include\net_wipx.h" />
+		<Unit filename="include\winquake.h" />
+		<Unit filename="quake.ico" />
+		<Unit filename="src\cd_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\conproc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\in_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\net_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\net_wins.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\net_wipx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\snd_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\sys_win.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\sys_wina.s">
+			<Option compilerVar="CC" />
+			<Option compile="1" />
+			<Option link="1" />
+			<Option weight="0" />
+			<Option compiler="msvctk" use="1" buildCommand="cmd /C cl.exe /EP &gt; $object.spp $file\ncmd /C .\gas2masm\release\gas2masm &lt; $object.spp &gt; $object.asm\nml /c /Cp /coff /Fo$object /Zm /Zi  $object.asm\n$(CMD_RM) $object.spp\n$(CMD_RM) $object.asm" />
+		</Unit>
+		<Unit filename="src\vid_win.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Release" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="winquake.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="..\s_win32gl\src\gl_test.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Unit filename="..\s_win32gl\src\gl_vidnt.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 GL Debug" />
+			<Option target="Win32 GL Release" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

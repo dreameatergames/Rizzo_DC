@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win32 Release" />
+	<File name="..\common\include\cdaudio.h" open="0" top="0" tabpos="14">
+		<Cursor position="965" topLine="0" />
+	</File>
+	<File name="..\common\include\client.h" open="0" top="0" tabpos="0">
+		<Cursor position="830" topLine="8" />
+	</File>
+	<File name="..\common\include\common.h" open="0" top="0" tabpos="0">
+		<Cursor position="7918" topLine="233" />
+	</File>
+	<File name="..\common\include\d_iface.h" open="0" top="0" tabpos="0">
+		<Cursor position="819" topLine="0" />
+	</File>
+	<File name="..\common\include\draw.h" open="0" top="0" tabpos="0">
+		<Cursor position="1421" topLine="10" />
+	</File>
+	<File name="..\common\include\keys.h" open="1" top="0" tabpos="12">
+		<Cursor position="5580" topLine="241" />
+	</File>
+	<File name="..\common\src\chase.c" open="0" top="0" tabpos="0">
+		<Cursor position="6260" topLine="158" />
+	</File>
+	<File name="..\common\src\cl_input.c" open="0" top="0" tabpos="0">
+		<Cursor position="10350" topLine="341" />
+	</File>
+	<File name="..\common\src\cl_tent.c" open="0" top="0" tabpos="0">
+		<Cursor position="9835" topLine="376" />
+	</File>
+	<File name="..\common\src\cmd.c" open="1" top="0" tabpos="1">
+		<Cursor position="13802" topLine="629" />
+	</File>
+	<File name="..\common\src\common.c" open="0" top="0" tabpos="0">
+		<Cursor position="6737" topLine="206" />
+	</File>
+	<File name="..\common\src\console.c" open="1" top="0" tabpos="16">
+		<Cursor position="6305" topLine="286" />
+	</File>
+	<File name="..\common\src\host.c" open="0" top="0" tabpos="0">
+		<Cursor position="25300" topLine="860" />
+	</File>
+	<File name="..\common\src\host_cmd.c" open="1" top="1" tabpos="2">
+		<Cursor position="29356" topLine="1298" />
+	</File>
+	<File name="..\common\src\keys.c" open="1" top="0" tabpos="11">
+		<Cursor position="9134" topLine="300" />
+	</File>
+	<File name="..\common\src\math.s" open="0" top="0" tabpos="12">
+		<Cursor position="0" topLine="9" />
+	</File>
+	<File name="..\common\src\mathlib.c" open="0" top="0" tabpos="0">
+		<Cursor position="3545" topLine="139" />
+	</File>
+	<File name="..\common\src\menu.c" open="1" top="0" tabpos="13">
+		<Cursor position="41435" topLine="1659" />
+	</File>
+	<File name="..\common\src\pr_cmds.c" open="1" top="0" tabpos="3">
+		<Cursor position="4928" topLine="798" />
+	</File>
+	<File name="..\common\src\r_part.c" open="0" top="0" tabpos="0">
+		<Cursor position="2960" topLine="103" />
+	</File>
+	<File name="..\common\src\sbar.c" open="1" top="0" tabpos="9">
+		<Cursor position="45780" topLine="1601" />
+	</File>
+	<File name="..\common\src\sv_phys.c" open="0" top="0" tabpos="0">
+		<Cursor position="38175" topLine="343" />
+	</File>
+	<File name="..\common\src\sv_user.c" open="0" top="0" tabpos="0">
+		<Cursor position="6285" topLine="254" />
+	</File>
+	<File name="..\r_common\src\r_2d.c" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="17" />
+	</File>
+	<File name="..\r_gl\include\glquake.h" open="0" top="0" tabpos="0">
+		<Cursor position="4236" topLine="126" />
+	</File>
+	<File name="..\r_soft\src\d_polyse.c" open="1" top="0" tabpos="4">
+		<Cursor position="29740" topLine="1188" />
+	</File>
+	<File name="..\r_soft\src\d_scan.c" open="1" top="0" tabpos="8">
+		<Cursor position="7819" topLine="250" />
+	</File>
+	<File name="..\r_soft\src\d_sky.c" open="1" top="0" tabpos="14">
+		<Cursor position="4170" topLine="104" />
+	</File>
+	<File name="..\r_soft\src\d_surf.c" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="304" />
+	</File>
+	<File name="..\r_soft\src\draw.c" open="1" top="0" tabpos="5">
+		<Cursor position="25586" topLine="1085" />
+	</File>
+	<File name="..\r_soft\src\r_alias.c" open="1" top="0" tabpos="17">
+		<Cursor position="33658" topLine="1146" />
+	</File>
+	<File name="..\r_soft\src\r_main.c" open="1" top="0" tabpos="7">
+		<Cursor position="24559" topLine="827" />
+	</File>
+	<File name="..\r_soft\src\screen.c" open="1" top="0" tabpos="15">
+		<Cursor position="25004" topLine="1083" />
+	</File>
+	<File name="..\s_dc\src\dc_vmu.c" open="1" top="0" tabpos="18">
+		<Cursor position="12494" topLine="347" />
+	</File>
+	<File name="..\s_dc\src\in_dc.c" open="0" top="0" tabpos="11">
+		<Cursor position="14129" topLine="473" />
+	</File>
+	<File name="include\net_wins.h" open="0" top="0" tabpos="0">
+		<Cursor position="816" topLine="11" />
+	</File>
+	<File name="include\winquake.h" open="0" top="0" tabpos="0">
+		<Cursor position="720" topLine="86" />
+	</File>
+	<File name="src\cd_win.c" open="0" top="0" tabpos="6">
+		<Cursor position="7718" topLine="294" />
+	</File>
+	<File name="src\conproc.c" open="0" top="0" tabpos="8">
+		<Cursor position="1477" topLine="337" />
+	</File>
+	<File name="src\in_win.c" open="1" top="0" tabpos="10">
+		<Cursor position="40349" topLine="1465" />
+	</File>
+	<File name="src\snd_win.c" open="0" top="0" tabpos="0">
+		<Cursor position="9763" topLine="420" />
+	</File>
+	<File name="src\vid_win.c" open="1" top="0" tabpos="6">
+		<Cursor position="49845" topLine="2084" />
+	</File>
+	<File name="winquake.rc" open="0" top="0" tabpos="12">
+		<Cursor position="284" topLine="102" />
+	</File>
+</CodeBlocks_layout_file>
