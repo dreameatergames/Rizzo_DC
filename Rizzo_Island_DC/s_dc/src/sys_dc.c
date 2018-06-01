@@ -250,7 +250,7 @@ int DC_CheckDrive()
 	return disc_status;
 }
 
-char dc_basedir[16] = "/cd/quake"; // Manoel Kasimier
+char dc_basedir[16] = "/cd/rizzo"; // Manoel Kasimier
 
 static void assert_hnd(const char * file, int line, const char * expr, const char * msg, const char * func)
 {

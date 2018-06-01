@@ -69,7 +69,7 @@ void SetVMUpath ()
 	Z_Free(s);
 }
 #endif
-cvar_t	savename = {"savename","QUAKE___"}; // 8 uppercase characters
+cvar_t	savename = {"savename","RIZZO"}; // 8 uppercase characters
 void SetSavename ()
 {
 	// savename must always be 8 uppercase alphanumeric characters
@@ -3234,7 +3234,7 @@ void M_Quit_f (void)
 {
 	M_PopUp_f (quitMessage, "quit"); // Manoel Kasimier
 }
-// fazer menu c/ opções de reiniciar o mapa atual, resetar o jogo, resetar o console
+// fazer menu c/ opï¿½ï¿½es de reiniciar o mapa atual, resetar o jogo, resetar o console
 // e sair pra BIOS
 // usar arch_reboot pra resetar o DC
 
