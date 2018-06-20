@@ -188,7 +188,7 @@ void CL_Stop_f (void)
 
 	if (!cls.demorecording)
 	{
-		Con_Printf ("Not recording a demo.\n");
+//		Con_Printf ("Not recording a demo.\n");
 		return;
 	}
 
@@ -201,7 +201,7 @@ void CL_Stop_f (void)
 	fclose (cls.demofile);
 	cls.demofile = NULL;
 	cls.demorecording = false;
-	Con_Printf ("Completed demo\n");
+//	Con_Printf ("Completed demo\n");
 }
 
 /*
@@ -243,7 +243,7 @@ void CL_Record_f (void)
 	if (c == 4)
 	{
 		track = atoi(Cmd_Argv(3));
-		Con_Printf ("Forcing CD track to %i\n", cls.forcetrack);
+//		Con_Printf ("Forcing CD track to %i\n", cls.forcetrack);
 	}
 	else
 		track = -1;	
@@ -261,11 +261,11 @@ void CL_Record_f (void)
 //
 	COM_DefaultExtension (name, ".dem");
 
-	Con_Printf ("recording to %s.\n", name);
+//	Con_Printf ("recording to %s.\n", name);
 	cls.demofile = fopen (name, "wb");
 	if (!cls.demofile)
 	{
-		Con_Printf ("ERROR: couldn't open.\n");
+//		Con_Printf ("ERROR: couldn't open.\n");
 		return;
 	}
 
@@ -295,7 +295,7 @@ void CL_PlayDemo_f (void)
 
 	if (Cmd_Argc() != 2)
 	{
-		Con_Printf ("play <demoname> : plays a demo\n");
+//		Con_Printf ("play <demoname> : plays a demo\n");
 		return;
 	}
 
@@ -313,11 +313,11 @@ void CL_PlayDemo_f (void)
 	strcpy (name, Cmd_Argv(1));
 	COM_DefaultExtension (name, ".dem");
 
-	Con_Printf ("Playing demo from %s.\n", name);
+//	Con_Printf ("Playing demo from %s.\n", name);
 	length = COM_FOpenFile (name, &cls.demofile, NULL);	// 2001-09-12 Returning from which searchpath a file was loaded by Maddes
 	if (!cls.demofile)
 	{
-		Con_Printf ("ERROR: couldn't open.\n");
+//		Con_Printf ("ERROR: couldn't open.\n");
 		cls.demonum = -1;		// stop demo loop
 		return;
 	}

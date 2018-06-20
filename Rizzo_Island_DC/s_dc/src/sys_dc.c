@@ -178,7 +178,7 @@ void Sys_Error (char *error, ...)
 	vid_empty();
 
 	/* Display the error message on screen */
-	drawtext(32, 64, "Makaqu - Fatal Error");
+	drawtext(32, 64, "Rizzo Island - Fatal Error");
 	drawtext(32, 96, strbuffer);
 
 	/* Hang - infinite loop */
@@ -261,7 +261,7 @@ static void assert_hnd(const char * file, int line, const char * expr, const cha
 	vid_empty();
 
 	/* Display the error message on screen */
-	drawtext(32, 64, "Makaqu - Assertion failure");
+	drawtext(32, 64, "Rizzo Island - Assertion failure");
 
 	sprintf(strbuffer, " Location: %s, line %d (%s)", file, line, func);
 	drawtext(32, 96, strbuffer);

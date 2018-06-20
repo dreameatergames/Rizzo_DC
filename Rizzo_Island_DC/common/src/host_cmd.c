@@ -683,7 +683,7 @@ void Host_SmallSavegame_f (void)
 	{
 	char description[33];
 	sprintf(description, "%-32s", cl.levelname);
-	VMU_Save (name, COM_SkipPath(name), "nxMakaqu game   ", description);
+	VMU_Save (name, COM_SkipPath(name), "Rizzo Island   ", description);
 	}
 #endif
 // Manoel Kasimier - VMU saves - end
@@ -889,7 +889,7 @@ void Host_Savegame_f (void)
 	{
 	char description[33];
 	sprintf(description, "%-32s", cl.levelname);
-	VMU_Save (name, COM_SkipPath(name), "nxMakaqu state  ", description);
+	VMU_Save (name, COM_SkipPath(name), "Rizzo Island Save  ", description);
 	}
 #endif
 // Manoel Kasimier - VMU saves - end
@@ -1719,7 +1719,7 @@ void Host_Kill_f (void)
 	if ((sv_player->v.health <= 0) && (sv_player->v.deadflag != DEAD_NO))
 // 2001-09-09 Kill command does not work for zombie players fix by Maddes  end
 	{
-		SV_ClientPrintf ("Can't suicide -- allready dead!\n");
+//		SV_ClientPrintf ("Can't suicide -- allready dead!\n");
 		return;
 	}
 
@@ -1752,11 +1752,11 @@ void Host_Pause_f (void)
 		{ // Manoel Kasimier
 		if (sv.paused)
 		{
-			SV_BroadcastPrintf ("%s paused the game\n", pr_strings + sv_player->v.netname);
+//			SV_BroadcastPrintf ("%s paused the game\n", pr_strings + sv_player->v.netname);
 		}
 		else
 		{
-			SV_BroadcastPrintf ("%s unpaused the game\n",pr_strings + sv_player->v.netname);
+//			SV_BroadcastPrintf ("%s unpaused the game\n",pr_strings + sv_player->v.netname);
 		}
 		} // Manoel Kasimier
 
@@ -1778,13 +1778,13 @@ void Host_PreSpawn_f (void)
 {
 	if (cmd_source == src_command)
 	{
-		Con_Printf ("prespawn is not valid from the console\n");
+//		Con_Printf ("prespawn is not valid from the console\n");
 		return;
 	}
 
 	if (host_client->spawned)
 	{
-		Con_Printf ("prespawn not valid -- allready spawned\n");
+//		Con_Printf ("prespawn not valid -- allready spawned\n");
 		return;
 	}
 
@@ -1853,7 +1853,7 @@ void Host_Spawn_f (void)
 		PR_ExecuteProgram (pr_global_struct->ClientConnect);
 
 		if ((Sys_FloatTime() - host_client->netconnection->connecttime) <= sv.time)
-			Sys_Printf ("%s entered the game\n", host_client->name);
+//			Sys_Printf ("%s entered the game\n", host_client->name);
 
 		PR_ExecuteProgram (pr_global_struct->PutClientInServer);
 	}
@@ -2349,14 +2349,14 @@ void Host_Startdemos_f (void)
 	if (cls.state == ca_dedicated)
 	{
 		if (!sv.active)
-			Cbuf_AddText ("map start\n");
+//			Cbuf_AddText ("map start\n");
 		return;
 	}
 
 	c = Cmd_Argc() - 1;
 	if (c > MAX_DEMOS)
 	{
-		Con_Printf ("Max %i demos in demoloop\n", MAX_DEMOS);
+//		Con_Printf ("Max %i demos in demoloop\n", MAX_DEMOS);
 		c = MAX_DEMOS;
 	}
 	// Manoel Kasimier - begin
@@ -2367,7 +2367,7 @@ void Host_Startdemos_f (void)
 			Con_Printf (cls.demos[i-1]);
 			Con_Printf ("\n");
 		}
-		Con_Printf ("%i demo(s) in loop\n", democount);
+//		Con_Printf ("%i demo(s) in loop\n", democount);
 		return;
 	}
 	// clear demo list
@@ -2383,7 +2383,7 @@ void Host_Startdemos_f (void)
 		if (!f)
 		{
 			i2++;
-			Con_Printf (va("startdemos: couldn't find %s\n", name));
+//			Con_Printf (va("startdemos: couldn't find %s\n", name));
 			continue;
 		}
 		fclose (f);

@@ -58,7 +58,7 @@ uint16 calcCRC (char *buf, int size)
 #define ICON		PALETTE+32
 
 #define HEADER_SIZE	128 // same as ICON
-#define APP_NAME	"nxMakaqu        " // 16 characters
+#define APP_NAME	"Rizzo Island    " // 16 characters
 
 static uint16 icon_palette[] =
 {
