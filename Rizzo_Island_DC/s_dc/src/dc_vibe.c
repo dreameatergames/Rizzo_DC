@@ -54,8 +54,6 @@ void Vibration_Stop (int player) // 0=player1, 1=player2
 	maple_device_t *dev;
 	if ( !(dev=maple_enum_dev(player, 2)) )
 		return;
-	if ( !(maple_device_func(player, 2) & MAPLE_FUNC_PURUPURU) )
-		return;
 	purupuru_rumble_raw(dev, 0x00000000);
 }
 
@@ -78,8 +76,6 @@ void Vibration_Update (void)
 		if (!vibration_update[i])
 			continue;
 		if ( !(dev[i]=maple_enum_dev(i, 2)) )
-			continue;
-		if ( !(maple_device_func(i, 2) & MAPLE_FUNC_PURUPURU) )
 			continue;
 #if 0
 		dc_vibe[i][0] = PURUPURU_SPECIAL_MOTOR1/*|PURUPURU_SPECIAL_PULSE*/;

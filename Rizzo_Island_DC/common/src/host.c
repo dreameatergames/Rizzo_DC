@@ -312,7 +312,7 @@ void Host_WriteConfiguration (void)
 	char filename[13], description[33];
 	sprintf(filename, "%s.CFG", savename.string);
 	sprintf(description, "%-32s", cl_name.string);
-	VMU_Save ("/ram/rizzo.cfg", filename, "rizzo config ", description);
+	VMU_Save ("/ram/rizzo.cfg", filename, "Rizzo Island config ", description);
 	}
 #endif
 // Manoel Kasimier - VMU saves - end
@@ -882,7 +882,7 @@ void Host_InitVCR (quakeparms_t *parms)
 		if (com_argc != 2)
 			Sys_Error("No other parameters allowed with -playback\n");
 
-		Sys_FileOpenRead("rizzo.vcr", &vcrFile);
+		Sys_FileOpenRead("quake.vcr", &vcrFile);
 		if (vcrFile == -1)
 			Sys_Error("playback file not found\n");
 
@@ -907,7 +907,7 @@ void Host_InitVCR (quakeparms_t *parms)
 
 	if ( (n = COM_CheckParm("-record")) != 0)
 	{
-		vcrFile = Sys_FileOpenWrite("rizzo.vcr");
+		vcrFile = Sys_FileOpenWrite("quake.vcr");
 
 		i = VCR_SIGNATURE;
 		Sys_FileWrite(vcrFile, &i, sizeof(int));
@@ -1016,12 +1016,12 @@ void Host_Init (quakeparms_t *parms)
 		if ((fileinfo = COM_LoadHunkFile ("gfx/alphamap.lmp")))
 			alphamap = fileinfo->data;
 		else
-//			Con_Printf("Couldn't find gfx/alphamap.lmp\n");
+			Con_Printf(" ");
 		if ((fileinfo = COM_LoadHunkFile ("gfx/addmap.lmp")))
 			additivemap = fileinfo->data;
 		else
-//			Con_Printf("Couldn't find gfx/addmap.lmp\n");
-//		if (!alphamap || !additivemap) Con_Printf("Blending effects disabled\n\n");
+			Con_Printf(" ");
+		if (!alphamap || !additivemap) Con_Printf(" ");
 		// Manoel Kasimier - transparencies - end
 
 #ifndef _arch_dreamcast // Manoel Kasimier
@@ -1069,14 +1069,14 @@ void Host_Init (quakeparms_t *parms)
 
 	SCR_Adjust(); // Manoel Kasimier - screen positioning
 	M_Credits_f(); // Manoel Kasimier
-//	Cbuf_InsertText ("exec rizzo.rc\n"); // Manoel Kasimier - moved to menu.c
+//	Cbuf_InsertText ("exec quake.rc\n"); // Manoel Kasimier - moved to menu.c
 
 	Hunk_AllocName (0, "-HOST_HUNKLEVEL-");
 	host_hunklevel = Hunk_LowMark ();
 
 	host_initialized = true;
 	
-//	Sys_Printf ("========Rizzo Initialized=========\n");	
+	Sys_Printf ("========Rizzo Initialized=========\n");	
 }
 
 

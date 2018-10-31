@@ -652,15 +652,15 @@ void Host_SmallSavegame_f (void)
 		return;
 	}
 // Manoel Kasimier - VMU saves - begin
-#ifdef _arch_dreamcast
-	sprintf (name, "/ram/%s", Cmd_Argv(1));
-#else
+//#ifdef _arch_dreamcast
+//	sprintf (name, "/ram/%s", Cmd_Argv(1));
+//#else
 // Manoel Kasimier - VMU saves - end
-	sprintf (name, "%s/%s", com_gamedir, Cmd_Argv(1));
-#endif // Manoel Kasimier - VMU saves
+//	sprintf (name, " ", com_gamedir, Cmd_Argv(1));
+//#endif // Manoel Kasimier - VMU saves
 	COM_DefaultExtension (name, ".GAM");
 
-	Con_Printf ("Saving game to %s...\n", name);
+	Con_Printf ("Saving Game");
 	f = fopen (name, "wb"); // Manoel Kasimier - reduced savegames - edited
 	if (!f)
 	{
@@ -683,7 +683,7 @@ void Host_SmallSavegame_f (void)
 	{
 	char description[33];
 	sprintf(description, "%-32s", cl.levelname);
-	VMU_Save (name, COM_SkipPath(name), "Rizzo Island   ", description);
+	VMU_Save (name, COM_SkipPath(name), "Rizzo Island Game   ", description);
 	}
 #endif
 // Manoel Kasimier - VMU saves - end
@@ -721,7 +721,7 @@ void Host_SmallLoadgame_f (void)
 	COM_DefaultExtension (name, ".GAM");
 #endif // Manoel Kasimier - VMU saves
 
-	Con_Printf ("Loading game from %s...\n", name);
+	Con_Printf ("Loading Game\n");
 	f = fopen (name, "r");
 	if (!f)
 	{
@@ -840,7 +840,7 @@ void Host_Savegame_f (void)
 #endif // Manoel Kasimier - VMU saves
 	COM_DefaultExtension (name, ".SAV"); // Manoel Kasimier - upper-case savegame filenames - edited
 
-	Con_Printf ("Saving game to %s...\n", name);
+	Con_Printf ("Saving Game");
 	f = fopen (name, "wb"); // Manoel Kasimier - reduced savegames - edited
 	if (!f)
 	{
@@ -889,7 +889,7 @@ void Host_Savegame_f (void)
 	{
 	char description[33];
 	sprintf(description, "%-32s", cl.levelname);
-	VMU_Save (name, COM_SkipPath(name), "Rizzo Island Save  ", description);
+	VMU_Save (name, COM_SkipPath(name), "Rizzo Island game   ", description);
 	}
 #endif
 // Manoel Kasimier - VMU saves - end
@@ -942,7 +942,7 @@ void Host_Loadgame_f (void)
 // been used.  The menu calls it before stuffing loadgame command
 //	SCR_BeginLoadingPlaque ();
 
-	Con_Printf ("Loading game from %s...\n", name);
+	Con_Printf ("Loading Game\n");
 	f = fopen (name, "r");
 	if (!f)
 	{
@@ -1107,7 +1107,7 @@ void SaveGamestate()
 
 	sprintf (name, "%s/%s.gip", com_gamedir, sv.name);
 
-	Con_Printf ("Saving game to %s...\n", name);
+	Con_Printf ("Saving Game\n");
 	f = fopen (name, "w");
 	if (!f)
 	{
@@ -1163,7 +1163,7 @@ int LoadGamestate(char *level, char *startspot)
 
 	sprintf (name, "%s/%s.gip", com_gamedir, level);
 
-	Con_Printf ("Loading game from %s...\n", name);
+	Con_Printf ("Loading Game\n");
 	f = fopen (name, "r");
 	if (!f)
 	{
@@ -1323,14 +1323,14 @@ void Host_Delete_f (void)
 	f = fopen (name, "wb");
 	if (!f)
 	{
-		Con_Printf ("Couldn't delete \"%s\"\n", COM_SkipPath(Cmd_Argv(1)));
+		Con_Printf ("Couldn't Delete\n");
 		return;
 	}
 	fclose (f);
 	F = remove (name);
 #endif
 	{
-		Con_Printf ("\"%s\" deleted\n", COM_SkipPath(Cmd_Argv(1)));
+		Con_Printf ("Save Deleted\n");
 		M_RefreshSaveList ();
 	}
 }
@@ -1719,7 +1719,7 @@ void Host_Kill_f (void)
 	if ((sv_player->v.health <= 0) && (sv_player->v.deadflag != DEAD_NO))
 // 2001-09-09 Kill command does not work for zombie players fix by Maddes  end
 	{
-//		SV_ClientPrintf ("Can't suicide -- allready dead!\n");
+		SV_ClientPrintf ("Can't suicide -- allready dead!\n");
 		return;
 	}
 
@@ -1752,11 +1752,11 @@ void Host_Pause_f (void)
 		{ // Manoel Kasimier
 		if (sv.paused)
 		{
-//			SV_BroadcastPrintf ("%s paused the game\n", pr_strings + sv_player->v.netname);
+			SV_BroadcastPrintf ("%s paused the game\n", pr_strings + sv_player->v.netname);
 		}
 		else
 		{
-//			SV_BroadcastPrintf ("%s unpaused the game\n",pr_strings + sv_player->v.netname);
+			SV_BroadcastPrintf ("%s unpaused the game\n",pr_strings + sv_player->v.netname);
 		}
 		} // Manoel Kasimier
 
@@ -1778,13 +1778,13 @@ void Host_PreSpawn_f (void)
 {
 	if (cmd_source == src_command)
 	{
-//		Con_Printf ("prespawn is not valid from the console\n");
+		Con_Printf ("prespawn is not valid from the console\n");
 		return;
 	}
 
 	if (host_client->spawned)
 	{
-//		Con_Printf ("prespawn not valid -- allready spawned\n");
+		Con_Printf ("prespawn not valid -- allready spawned\n");
 		return;
 	}
 
@@ -1853,7 +1853,7 @@ void Host_Spawn_f (void)
 		PR_ExecuteProgram (pr_global_struct->ClientConnect);
 
 		if ((Sys_FloatTime() - host_client->netconnection->connecttime) <= sv.time)
-//			Sys_Printf ("%s entered the game\n", host_client->name);
+			Sys_Printf ("%s entered the game\n", host_client->name);
 
 		PR_ExecuteProgram (pr_global_struct->PutClientInServer);
 	}
@@ -2349,14 +2349,14 @@ void Host_Startdemos_f (void)
 	if (cls.state == ca_dedicated)
 	{
 		if (!sv.active)
-//			Cbuf_AddText ("map start\n");
+			Cbuf_AddText ("map start\n");
 		return;
 	}
 
 	c = Cmd_Argc() - 1;
 	if (c > MAX_DEMOS)
 	{
-//		Con_Printf ("Max %i demos in demoloop\n", MAX_DEMOS);
+		Con_Printf ("Max %i demos in demoloop\n", MAX_DEMOS);
 		c = MAX_DEMOS;
 	}
 	// Manoel Kasimier - begin
@@ -2367,7 +2367,6 @@ void Host_Startdemos_f (void)
 			Con_Printf (cls.demos[i-1]);
 			Con_Printf ("\n");
 		}
-//		Con_Printf ("%i demo(s) in loop\n", democount);
 		return;
 	}
 	// clear demo list
@@ -2383,7 +2382,7 @@ void Host_Startdemos_f (void)
 		if (!f)
 		{
 			i2++;
-//			Con_Printf (va("startdemos: couldn't find %s\n", name));
+	//		Con_Printf (va("startdemos: couldn't find %s\n", name));
 			continue;
 		}
 		fclose (f);

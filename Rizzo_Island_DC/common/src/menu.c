@@ -1185,7 +1185,7 @@ void M_Fightoon_Key (int key)
 			#ifdef _arch_dreamcast
 			M_SelectVMU_f (m_loadoptions);
 			#else
-			M_PopUp_f("Do you wish to load the\nsaved settings?", "exec rizzo.cfg\n");
+			M_PopUp_f("Do you wish to load the\nsaved settings?", "exec config.cfg\n");
 			#endif
 			break;
 
@@ -1403,7 +1403,7 @@ void M_SelectVMU_Key (int k)
 			if (nextmenu == m_loadoptions)
 			{
 				M_Options_f();
-				M_PopUp_f("Do you wish to load the\nsaved settings?", "exec rizzo.cfg\n");
+				M_PopUp_f("Do you wish to load the\nsaved settings?", "exec config.cfg\n");
 			}
 		}
 	}
@@ -1912,7 +1912,7 @@ void M_Options_Key (int k)
 			M_SelectVMU_f (m_loadoptions);
 #else
 		// Manoel Kasimier - VMU saves - end
-			M_PopUp_f("Do you wish to load the\nsaved settings?", "exec rizzo.cfg\n"); // Manoel Kasimier
+			M_PopUp_f("Do you wish to load the\nsaved settings?", "exec config.cfg\n"); // Manoel Kasimier
 #endif	// Manoel Kasimier - VMU saves
 			break;
 		case 5:
@@ -3088,7 +3088,7 @@ void M_Credits_Key (int key)
 	{
 		m_cursor[m_state] += 1;
 		m_credits_starttime = realtime-8.0;//8.5
-		Cbuf_InsertText ("exec rizzo.rc\n");
+		Cbuf_InsertText ("exec quake.rc\n");
 	}
 	else if (m_cursor[m_state] == 3)
 		M_Off ();
@@ -3144,13 +3144,17 @@ void M_Help_Draw (void)
 		{
 credits1:
 			M_DrawTextBox (0, y, 38*8, 23*8);
-			M_PrintWhite(16+4,	y+=12, "Rizzo Island Ver. 1.0");
+			M_PrintWhite(16+4,	y+=12, "Platformer-Quake Dreamcast Demo");
+			M_Print		(16,	 y+=8, " Version 0.0.1");
+//			M_PrintWhite(16+4,	y+=12, "Rizzo Island Ver. 1.0");
+			M_PrintWhite(16,	y+=16, "Based on Makaqu 1.3.1");
 			
 			M_PrintWhite(16,	y+=16, "Game Design");
 			M_Print		(16,	 y+=8, " David Croshaw");
-	
+
+// Commented Out For Demo			
 			M_PrintWhite(16,	y+=16, "Music By");
-			M_Print		(16,	 y+=8, " Tom Rizzo");
+//			M_Print		(16,	 y+=8, " Tom Rizzo");
 			M_Print		(16,	 y+=8, " David Croshaw");	
 			
 			M_PrintWhite(16,	y+=16, "Programming");
@@ -3161,9 +3165,9 @@ credits1:
 
 			M_PrintWhite(16,	y+=16, "QA/Playtesting");
 			M_Print		(16,	 y+=8, " Tim Mask");
-			M_Print		(16,	 y+=8, " Patrick Sherry");
 
-			M_PrintWhite(16,	y+=8, "Dedicated to my Uncle Tom Rizzo");
+//Commented out for Demo
+//			M_PrintWhite(16,	y+=8, "Dedicated to my Uncle Tom Rizzo");
 		}
 		else
 		{
@@ -3230,7 +3234,7 @@ void M_Quit_f (void)
 {
 	M_PopUp_f (quitMessage, "quit"); // Manoel Kasimier
 }
-// fazer menu c/ opï¿½ï¿½es de reiniciar o mapa atual, resetar o jogo, resetar o console
+// fazer menu c/ opções de reiniciar o mapa atual, resetar o jogo, resetar o console
 // e sair pra BIOS
 // usar arch_reboot pra resetar o DC
 

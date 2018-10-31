@@ -296,20 +296,20 @@ void Cmd_Exec_f (void)
 
 	mark = Hunk_LowMark ();
 	// Manoel Kasimier - config.cfg replacement - begin
-	if (!Q_strcmp(Cmd_Argv(1), "rizzo.cfg"))
-//		f = (char *)COM_LoadHunkFile ("rizzo.cfg"); // it doesn't work here! argh!
+	if (!Q_strcmp(Cmd_Argv(1), "config.cfg"))
+//		f = (char *)COM_LoadHunkFile ("makaqu.cfg"); // it doesn't work here! argh!
 	{
 		int h;
 // Manoel Kasimier - VMU saves - begin
 #ifdef _arch_dreamcast
 		extern cvar_t savename;
-		if (VMU_Load("/ram/rizzo.cfg", va("%s.CFG", savename.string)))
+		if (VMU_Load("/ram/nxmakaqu.cfg", va("%s.CFG", savename.string)))
 			return;
 /*
 		{
 			Z_Free (cmd_argv[1]);
-			cmd_argv[1] = Z_Malloc (18);//(Q_strlen("/ram/rizzo.cfg")+1);
-			Q_strcpy(cmd_argv[1], "/ram/rizzo.cfg");
+			cmd_argv[1] = Z_Malloc (18);//(Q_strlen("/ram/nxmakaqu.cfg")+1);
+			Q_strcpy(cmd_argv[1], "/ram/nxmakaqu.cfg");
 		}
 */
 		else
@@ -317,10 +317,10 @@ void Cmd_Exec_f (void)
 			Con_DPrintf ("Config file not found in VMU; Loading from disc...\n");
 #endif
 // Manoel Kasimier - VMU saves - end
-			COM_OpenFile ("rizzo.cfg", &h, NULL);
+			COM_OpenFile ("makaqu.cfg", &h, NULL);
 			if (h != -1)
 			{
-				Q_strcpy(cmd_argv[1], "rizzo.cfg"); // "rizzo.cfg" and "rizzo.cfg" have the same size, so there's no need to realloc the buffer
+				Q_strcpy(cmd_argv[1], "makaqu.cfg"); // "config.cfg" and "makaqu.cfg" have the same size, so there's no need to realloc the buffer
 				COM_CloseFile (h);
 			}
 // Manoel Kasimier - VMU saves - begin
@@ -350,14 +350,14 @@ void Cmd_Exec_f (void)
 	Cbuf_InsertText (f);
 	// Manoel Kasimier - begin
 	// skip a frame to prevent possible crashes when the engine is started with the "-map" parameter
-//	if (!Q_strcmp(Cmd_Argv(1), "rizzo.rc"))
+//	if (!Q_strcmp(Cmd_Argv(1), "quake.rc"))
 		Cbuf_InsertText ("wait\n");
 	// Manoel Kasimier - end
 	Hunk_FreeToLowMark (mark);
 // Manoel Kasimier - VMU saves - begin
 #ifdef _arch_dreamcast
-	if (!Q_strcmp(cmd_argv[1], "/ram/rizzo.cfg"))
-		fs_unlink("/ram/rizzo.cfg");
+	if (!Q_strcmp(cmd_argv[1], "/ram/nxmakaqu.cfg"))
+		fs_unlink("/ram/nxmakaqu.cfg");
 #endif
 // Manoel Kasimier - VMU saves - end
 }

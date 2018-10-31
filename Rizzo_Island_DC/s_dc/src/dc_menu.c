@@ -96,7 +96,7 @@ static void ModList_LoadIniFile(int c)
 	int			i, r;
 	FILE		*f;
 	// Open .ini file
-	if ((f = fopen (va("%s/rizzo.ini", modlist[c].fullpath), "r")))
+	if ((f = fopen (va("%s/nxmakaqu.ini", modlist[c].fullpath), "r")))
 	{
 		while (!feof(f))
 		{
@@ -191,8 +191,8 @@ static void ModList_ReScan(const char *base)
 		strncpy(modlist[modlist_c].fullpath, base, 256);
 		strcat(modlist[modlist_c].fullpath, "/");
 		strcat(modlist[modlist_c].fullpath, "id1");
-		strncpy(modlist[modlist_c].game_name, "Rizzo Island", 256);
-		strncpy(modlist[modlist_c].game_text, "Rizzo by Dreameater Games", 256);
+		strncpy(modlist[modlist_c].game_name, "Quake", 256);
+		strncpy(modlist[modlist_c].game_text, "Quake by id Software", 256);
 		ModList_LoadIniFile(modlist_c); // Manoel Kasimier
 		modlist_c++;
 	}
