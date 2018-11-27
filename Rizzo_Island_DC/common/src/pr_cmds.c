@@ -2041,13 +2041,13 @@ void PF_WaterMove (void)
 // player enter water sound
 		if (watertype == CONTENT_LAVA)
 //			sound (self, CHAN_BODY, "player/inlava.wav", 1, ATTN_NORM);
-			SV_StartSound (self, CHAN_BODY, "player/inlava.wav", 255, ATTN_NORM);
+			SV_StartSound (self, CHAN_BODY, "misc/fire.wav", 255, ATTN_NORM);
 		if (watertype == CONTENT_WATER)
 //			sound (self, CHAN_BODY, "player/inh2o.wav", 1, ATTN_NORM);
-			SV_StartSound (self, CHAN_BODY, "player/inh2o.wav", 255, ATTN_NORM);
+			SV_StartSound (self, CHAN_BODY, "misc/water1.wav", 255, ATTN_NORM);
 		if (watertype == CONTENT_SLIME)
 //			sound (self, CHAN_BODY, "player/slimbrn2.wav", 1, ATTN_NORM);
-			SV_StartSound (self, CHAN_BODY, "player/slimbrn2.wav", 255, ATTN_NORM);
+			SV_StartSound (self, CHAN_BODY, "player/water1.wav", 255, ATTN_NORM);
 
 		self->v.flags = (float)(flags | FL_INWATER);
 		self->v.dmgtime = 0;
