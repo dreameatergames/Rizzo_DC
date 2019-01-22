@@ -585,7 +585,7 @@ Sbar_DrawAmmoList
 */
 void Sbar_DrawAmmoList (int x, int y, int vertical) // default 0, -24, 0
 {
-	// existe uma diferenï¿½a de 4 pixels pra direita ao se desenhar os nï¿½meros...
+	// existe uma diferença de 4 pixels pra direita ao se desenhar os números...
 	int		i;
 	char	num[12]; // Manoel Kasimier - high values in the status bar - edited
 	if (sbar.value > 3)
@@ -614,10 +614,10 @@ void Sbar_DrawAmmoList (int x, int y, int vertical) // default 0, -24, 0
 				Sbar_DrawCharacter (x + 16, y - i*8, 18 + num[2] - '0');
 		}
 		/*
-		(6		distï¿½ncia entre os valores, incluindo os nï¿½meros (ex: 100---200---)
-		*i		ï¿½ndice do valor (ex: shells=0, nails=1)
-		+#)		desloca o caracter na quantidade de espaï¿½os indicada pelo nï¿½mero
-		*8		transforma a posiï¿½ï¿½o horizontal em quantidade de caracteres
+		(6		distância entre os valores, incluindo os números (ex: 100---200---)
+		*i		índice do valor (ex: shells=0, nails=1)
+		+#)		desloca o caracter na quantidade de espaços indicada pelo número
+		*8		transforma a posição horizontal em quantidade de caracteres
 		- 2 + x
 		//*/
 	}
@@ -1133,7 +1133,7 @@ void Sbar_DrawAmmo (int x, int x2, int y) // default 224, 248, 0
 			i = 1;
 	}
 	if (!i || sbar.value < 4 || cl.stats[STAT_AMMO])
-		Sbar_DrawNum (x2, y, cl.stats[STAT_AMMO], 3, 0);
+		Sbar_DrawNum (x2, y, cl.stats[STAT_AMMO], 3, cl.stats[STAT_AMMO] <= 10);
 }
 
 //=============================================================================
