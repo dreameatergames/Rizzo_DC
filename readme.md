@@ -9,11 +9,11 @@ I've only been able to get the Dreamcast version to compile, and the Windows and
 
 - Modified KOS 1.3 Distribution from other github project located here: [Modified-KOS-1.3-Distrobution](https://github.com/rizzoislandgame/Modified-KOS-1.3-For-Makaqu)
 - Windows XP Machine or Virtual Machine
-- DCDEV_R1.ISO (Included in Modified KOS 1.3 Distribution Project)
+- DCDEV_R1.ISO: [Download Here](https://mega.nz/#!yX52VaDJ!XKYZbdM0HbQ3TUm88BwsKSH8xqwxb1M2CBAdXaNtpdA)
 
 ##Compiling:
 
-1. Install The DCDEV_R1.ISO Cygwin KOS 1.3 distribution in Windows XP.
+1. Install The DCDEV_R1.ISO Cygwin KOS 1.3 distribution in Windows XP 
 
 2. Go into the directory "C:\cygwin\usr\local" and delete the directory "dc".
 
