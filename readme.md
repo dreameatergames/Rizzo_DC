@@ -1,4 +1,4 @@
-### Rizzo Island Software Rendered Version
+# Rizzo Island Software Rendered Version
 
 This is the software rendered of Rizzo Island, based on Makaqu 1.3 by Mankrip.
 
